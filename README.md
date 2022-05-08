@@ -101,6 +101,10 @@ A gitignore is a file specifying what files/folders/paths should not be tracked 
 ### Pull Requests
 Pull requests (or PRs) are a concept from GitHub which allows to have a 4-eye principle: the merge with the `main` branch is turned into a discussion amongst developers. Normally, approval from another developer is required to merge.
 
+E.g.: 
+- https://github.com/tiangolo/fastapi/pull/4758 
+- https://github.com/pandas-dev/pandas/pull/29944 
+
 ## Sources
 - https://www.geeksforgeeks.org/what-is-a-git-repository/
 - https://en.wikipedia.org/wiki/Git
