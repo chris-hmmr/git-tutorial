@@ -3,10 +3,12 @@
 ## Class schedule
 
 - Review of previous class homeworks - in breakout rooms (15 min)
-- Intro to Git (40 min)
-- Break (10 mins)
-- Installing and editing the project - in breakout rooms (20 mins)
--
+- Intro to Git (20 min)
+- Installing git and initialize a repo - in breakout rooms (20 min)
+- Break (10 min)
+- Branches and remotes (20 min)
+- Installing and editing the project - in breakout rooms (20 min)
+- Extra features + Github PRs walkthrough(20 min)
 
 -------
 ## What is Git? 
@@ -24,32 +26,49 @@ Git was originally created by Linus Torvalds in 2005 to collaborate with other d
 A repository is a collection of files containing the different version of a project. You can think of your project repository as your project folder, augmented with some superpowers that Git offers.
 ### Commit
 A state (or snapshot) of the repository in time. This is a bit complicated, so I normally like to think of it as saving the project.
+
+### Analogies
+I find it helpful to get started with some anologies:
+
+Git        | Your Computer
+-----------|--------------
+Repository | Folder
+Commit     | Save
+
+## Workflow
+1. Create a new folder and initialize a git repository: `git init` >> this command tells git this is not just a simple folder, but a repository
+2. Create a new file, save it and add (stage) it `git add my_file.py`
+3. Commit it: `git commit -m "a commit message"`
+4. Check the changes with `git diff`
+
+## Breakout rooms (20 mins)
+- Install git in your machine (open the terminal/CMD, type `git` and enter. If you get an error you will have to install it). Here is the [installation guide](https://github.com/git-guides/install-git)
+- Create a new folder and initialize a repository
+- Create a file named `main.py` and write a "Hello, World!" program in it
+- Stage the file and commit it
+- Check the changes 
+- Check the logs (`git logs`)
+
+## Some Additional Concepts
+### Remote
+This is a common repository where the code is stored for everyone to access. Developers **pull** (aka download the latest version of the source code) from and **push** (aka upload) their changes to Remote. A remote is generally accessible via the network (the internet or companies intranets). This platform we're looking at today, *GitHub.com* is often used as a Remote. (NOTE: A repository can have multiple remotes, the one which acts as the central repository is often named **origin**)
+
+When you get the latest version of the repository from the Remote, it's called `pull`. When you want to send your changes to a remote, it's called `push`.
 ### Branch
 When you "branch", you create another version of the project which you can edit and develop without affecting the branch that contains the "production" code. 
 
 This branch is normally named `main` or `master` (for older repositories) - but it can be named however you like. One another common branch is the `develop` branch, which contains the code being worked on and not ready to be released yet.
 ### Merge
 Once you're done with the changes in your branch, you want to bring them back to the branch that contains the version that the other developers work from (commonly `main` or `development`). Merge allows you to include the changes from one branch into another. 
-### Remote
-This is a common repository where the code is stored for everyone to access. Developers **pull** (aka download the latest version of the source code) from and **push** (aka upload) their changes to Remote. A remote is generally accessible via the network (the internet or companies intranets). This platform we're looking at today, *GitHub.com* is often used as a Remote. (NOTE: A repository can have multiple remotes, the one which acts as the central repository is often named **origin**)
-
-When you get the latest version of the repository from the Remote, it's called `pull`. When you want to send your changes to a remote, it's called `push`.
 
 ### Analogies
-I find it helpful to get started with some anologies:
-
-
 Git        | Your Computer
 -----------|--------------
-Repository | Folder
-Commit     | Save
-Branch     | Create a copy of the folder
-Merge      | Bringing your edits from the `_copy` folder back to the main folder
 Remote     | Google Drive/Dropbox
 Push/Pull  | Sync with Google Drive/Dropbox
-
-## Workflow
-Disclaimer: there are many git workflows, this is a generic workflow which can work well for small projects, but your company's one will most likely differ.
+Branch     | Create a copy of the folder
+Merge      | Bringing your edits from the `_copy` folder back to the main folder
+## Workflow with Branching
 
 2. Before you start, you clone a repository - e.g. `git clone https://github.com/arabinelli/redi-intro-to-git`
 2. Always make sure you have the latest version from the Remote! You do so by running `git pull origin main` >> `origin` is the name of the Remote (Github.com in our case), `main` is the branch I want to pull
@@ -75,7 +94,6 @@ Disclaimer: there are many git workflows, this is a generic workflow which can w
 - Finally, now it seems like a ton of work, but most of it is quite repetitive so it becomes part of your developer muscle memory
 
 ## Breakout rooms (20 mins)
-- Install git in your machine (open the terminal/CMD, type `git` and enter. If you get an error you will have to install it). Here is the [installation guide](https://github.com/git-guides/install-git)
 - Clone this repository
 - Create a branch named `{your-name}/git-tutorial`
 - Replace YOUR NAME in the following block:
