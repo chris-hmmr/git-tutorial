@@ -101,8 +101,6 @@ Merge      | Bringing your edits from the `_copy` folder back to the main folder
 print("Hello, YOUR NAME!")
 ```
 - Commit and push your branch to origin. DO NOT MERGE
-- Create a new file, named `hello_world.py` and write an hello world python script in there.
-- Commit and push your branch to origin. DO NOT MERGE
 
 ## General Tips
 - Keep your commits small (aka few changes in every commit)
