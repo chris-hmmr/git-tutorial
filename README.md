@@ -38,9 +38,9 @@ Commit     | Save
 ## Workflow
 1. Create a new folder and initialize a git repository: `git init` >> this command tells git this is not just a simple folder, but a repository
 2. Create a new file, save it and add (stage) it `git add my_file.py`
-3. Commit it: `git commit -m "a commit message"`
-4. Check the changes with `git diff`
-
+3. Check the changes with `git diff`
+4. Commit it: `git commit -m "a commit message"`
+-------
 ## Breakout rooms (20 mins)
 - Install git in your machine (open the terminal/CMD, type `git` and enter. If you get an error you will have to install it). Here is the [installation guide](https://github.com/git-guides/install-git)
 - Create a new folder and initialize a repository
@@ -48,6 +48,7 @@ Commit     | Save
 - Stage the file and commit it
 - Check the changes 
 - Check the logs (`git logs`)
+-------
 
 ## Some Additional Concepts
 ### Remote
@@ -68,6 +69,7 @@ Remote     | Google Drive/Dropbox
 Push/Pull  | Sync with Google Drive/Dropbox
 Branch     | Create a copy of the folder
 Merge      | Bringing your edits from the `_copy` folder back to the main folder
+-------
 ## Workflow with Branching
 
 2. Before you start, you clone a repository - e.g. `git clone https://github.com/arabinelli/redi-intro-to-git`
@@ -93,6 +95,8 @@ Merge      | Bringing your edits from the `_copy` folder back to the main folder
 - Multiple people can work on the same project at the same time, without interfering with each other.
 - Finally, now it seems like a ton of work, but most of it is quite repetitive so it becomes part of your developer muscle memory
 
+-------
+
 ## Breakout rooms (20 mins)
 - Clone this repository
 - Create a branch named `{your-name}/git-tutorial`
@@ -108,6 +112,7 @@ print("Hello, YOUR NAME!")
 - Push to origin regularly
 - If you're working on a shared branch
 
+-------
 ## Extra
 ### .gitignore
 A gitignore is a file specifying what files/folders/paths should not be tracked by git. This can be desirable for a few reasons, for instance:
