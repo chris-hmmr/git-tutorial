@@ -104,7 +104,7 @@ Merge      | Bringing your edits from the `_copy` folder back to the main folder
 ```python
 print("Hello, YOUR NAME!")
 ```
-- Commit and push your branch to origin. DO NOT MERGE
+- Commit and push your branch to origin (if you have a Github account). DO NOT MERGE
 
 ## General Tips
 - Keep your commits small (aka few changes in every commit)
