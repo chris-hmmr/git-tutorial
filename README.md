@@ -97,7 +97,7 @@ Merge      | Bringing your edits from the `_copy` folder back to the main folder
 
 -------
 
-## Breakout rooms (20 mins)
+## Breakout rooms (20 mins) <-- Homework!
 - Clone this repository
 - Create a branch named `{your-name}/git-tutorial`
 - Replace YOUR NAME in the following block:
