@@ -72,15 +72,15 @@ Merge      | Bringing your edits from the `_copy` folder back to the main folder
 -------
 ## Workflow with Branching
 
-2. Before you start, you clone a repository - e.g. `git clone https://github.com/arabinelli/redi-intro-to-git`
+1. Before you start, you clone a repository - e.g. `git clone https://github.com/arabinelli/redi-intro-to-git`
 2. Always make sure you have the latest version from the Remote! You do so by running `git pull origin main` >> `origin` is the name of the Remote (Github.com in our case), `main` is the branch I want to pull
-2. You want to fix the number of the first bullet point here. You're well mannered, so you create a new branch to avoid interference with your colleagues: `git checkout -b fix/bullet-points-number` >> `checkout` tells git to move to another branch, the `-b` flag tells git to create the new branch, `fix/bullet-points-number` is the name you decided to give to your branch.
-2. You edit the bullet point and save the changes. 
-2. [OPTIONAL] You don't need to do this now as git already tracks this file, but if you create a new file you must also add it: `git add my_new_file.py`
-2. You are ready for the Git version of saving: `git commit -m "Fix the README bullet numbering"` >> It is extremely helpful to add a message which explains what you're doing, that's what the `-m` and the message are for. 
-2. What if your computer breaks??? You want to push the changes to the origin: `git push origin fix/bullet-points-number` - or only `git push`
-2. You're done with your changes, it's time to bring them back to the `main` branch: you switch back to the main branch (`git checkout main` - notice there's no `-b` here!) and merge your branch: `git merge fix/bullet-points-number`. The syntax here is to specify the name of the *other branch* which **merges into** the *current branch*
-2. Finally, you sync the main branch with origin, so other developers can use it: `git push origin master`
+3. You want to fix the number of the first bullet point here. You're well mannered, so you create a new branch to avoid interference with your colleagues: `git checkout -b fix/bullet-points-number` >> `checkout` tells git to move to another branch, the `-b` flag tells git to create the new branch, `fix/bullet-points-number` is the name you decided to give to your branch.
+4. You edit the bullet point and save the changes. 
+5. [OPTIONAL] You don't need to do this now as git already tracks this file, but if you create a new file you must also add it: `git add my_new_file.py`
+6. You are ready for the Git version of saving: `git commit -m "Fix the README bullet numbering"` >> It is extremely helpful to add a message which explains what you're doing, that's what the `-m` and the message are for. 
+7. What if your computer breaks??? You want to push the changes to the origin: `git push origin fix/bullet-points-number` - or only `git push`
+8. You're done with your changes, it's time to bring them back to the `main` branch: you switch back to the main branch (`git checkout main` - notice there's no `-b` here!) and merge your branch: `git merge fix/bullet-points-number`. The syntax here is to specify the name of the *other branch* which **merges into** the *current branch*
+9. Finally, you sync the main branch with origin, so other developers can use it: `git push origin master`
 
 **To summarize:**
 - Git pull
